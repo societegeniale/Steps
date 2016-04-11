@@ -6,3 +6,5 @@ p <- ggplot(data=intervalMean, mapping = aes(x=interval,y=steps) ) +
   geom_line()
 
 print(p)
+
+print(intervalMean$interval[which.max(intervalMean$steps)])

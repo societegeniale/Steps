@@ -7,6 +7,6 @@ if( !file.exists("activity.csv")) {
   
 }
 
-steps <- fread("activity.csv")
+stepsData <- fread("activity.csv")
 
-steps$date <- as.Date(steps$date,"%Y-%m-%d")
+stepsData$date <- as.Date(stepsData$date,"%Y-%m-%d")
